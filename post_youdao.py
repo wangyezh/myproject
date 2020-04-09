@@ -4,20 +4,22 @@ url="http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule"
 
 
 def get_salt():
- return '15859057471894'
+ return '15864380563960'
+
+
 
 
 def get_sign():
- return '36a538b751b30d75deca4b304e1b1158'
+ return '27206453f157241971c871cfdba38aed'
 
 
 def get_ts():
         import time
-        ts=time.time()
+        ts = time.time()
         ts=str(int(round(ts*1000)))
         return ts
-
-        #'1586066770186'
+        #1586438056396
+        #1586438056396
 
 
 
@@ -28,10 +30,10 @@ form_data={
  'to':'AUTO',
  'smartresult':'dict',
  'client':'fanyideskweb',
- 'salt': get_salt(),
- 'sign': get_sign(),
- 'ts': get_ts(),
- 'bv':'e2a78ed30c66e16a857c5b6486a1d326',
+ 'salt':get_salt(),
+ 'sign':get_sign(),
+ 'ts':get_ts(),
+ 'bv':'5158ae48583349ec7168cd8d4689c03e',
  'doctype':'json',
  'version':'2.1',
  'keyfrom':'fanyi.web',
