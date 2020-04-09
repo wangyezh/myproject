@@ -1,12 +1,17 @@
+import random
 import requests
-
+import time
 url="http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule"
 
 
 def get_salt():
- return '15864380563960'
-
-
+ s=str(random.randint(0,10))
+ t=get_ts()
+ #print("random = ",s)
+ #print("ts= ",t)
+ #print("salt= ",t+s)
+ return t+s
+     #'15864380563960'
 
 
 def get_sign():
@@ -14,7 +19,7 @@ def get_sign():
 
 
 def get_ts():
-        import time
+
         ts = time.time()
         ts=str(int(round(ts*1000)))
         return ts
