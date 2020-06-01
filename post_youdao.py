@@ -65,7 +65,7 @@ if __name__ == '__main__':
         try:
            i=input("please input:")
            youdao=Youdao(i)
-           print("fanyi result",youdao.fanyi())
+           print("fanyi result：",youdao.fanyi())
         except:
              pass
 
